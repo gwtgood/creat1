@@ -1,0 +1,94 @@
+
+/* Formulär */
+form {
+  border: 3px solid #121212; /* Svart ram */
+  max-width: 400px; /* Maxbredd */
+  margin: 40px auto; /* Centrering med marginal */
+  padding: 20px; /* Inre utrymme */
+  background-image: url('bilder/OIP.jpg'); /* Bakgrundsbild */
+  border-radius: 10px; /* Rundade hörn */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Lätt skugga */
+}
+
+/* Inputfält */
+input[type=text], input[type=password] {
+  width: 100%; /* Full bredd */
+  padding: 12px 20px; /* Inre utrymme */
+  margin: 8px 0; /* Vertikal marginal */
+  border: 1px solid #ccc; /* Ljusgrå ram */
+  border-radius: 6px; /* Rundade hörn */
+}
+
+/* Knapp */
+button {
+  background-color: #04AA6D; /* Grön bakgrund */
+  color: white; /* Vit text */
+  padding: 14px 20px; /* Inre utrymme */
+  margin: 8px 0; /* Vertikal marginal */
+  width: 100%; /* Full bredd */
+  border-radius: 8px; /* Rundade hörn */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Lätt skugga */
+  cursor: pointer; /* Muspekare för klickbarhet */
+}
+
+button:hover {
+  opacity: 0.9; /* Lätt genomskinlighet vid hover */
+}
+
+/* Avbrytknapp */
+.cancelbtn {
+  background-color: #f44336; /* Röd bakgrund */
+  padding: 10px 18px; /* Inre utrymme */
+  width: auto; /* Automatisk bredd */
+}
+
+/* Avatarbild */
+.imgcontainer {
+  text-align: center; /* Centrerar innehåll */
+  margin: 24px 0 12px 0; /* Marginaler */
+  background-image: url('bilder/Anime-Logo-PNG-HD-Image.png'); /* Bakgrundsbild */
+  background-size: contain; /* Anpassa bildstorlek */
+  height: 150px; /* Höjd på behållaren */
+}
+
+img.avatar {
+  width: 40%; /* Bildbredd */
+  border-radius: 50%; /* Rund bild */
+}
+
+/* För "Forgot Password"-text */
+span.psw {
+  float: right; /* Högersidan */
+  padding-top: 16px; /* Padding */
+}
+
+/* Responsiv design för små skärmar */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block; /* Blocklayout på mobil */
+    float: none; /* Ingen float */
+  }
+  .cancelbtn {
+    width: 100%; /* Full bredd */
+  }
+}
+
+/* Länk-knapp */
+.login-link-button {
+  display: block; /* Blockelement */
+  text-align: center; /* Centrerad text */
+  background-color: #04AA6D; /* Grön bakgrund */
+  color: white; /* Vit text */
+  padding: 15px 20px; /* Inre utrymme */
+  margin: 8px 0; /* Marginal */
+  width: 100%; /* Full bredd */
+  text-decoration: none; /* Ingen understrykning */
+  font-size: 16px; /* Textstorlek */
+  border-radius: 8px; /* Rundade hörn */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Lätt skugga */
+  cursor: pointer; /* Muspekare för klickbarhet */
+}
+
+.login-link-button:hover {
+  opacity: 0.9; /* Lätt genomskinlighet vid hover */
+}

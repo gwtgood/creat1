@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informationssida</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+    <h2 style="text-align:center;">Logga in</h2>
+
+    <form>
+        <div class="imgcontainer">
+            <!-- Bild sätts via CSS -->
+        </div>
+      
+        <div class="container">
+            <label for="uname"><b>Användarnamn</b></label>
+            <input type="text" placeholder="Ange användarnamn" name="uname" required>
+        
+            <label for="psw"><b>Lösenord</b></label>
+            <input type="password" placeholder="Ange lösenord" name="psw" required>
+        
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Kom ihåg mig
+            </label>
+
+            <!-- Länken som ser ut som en knapp -->
+            <a href="index.html" class="login-link-button">Logga in</a>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Avbryt</button>
+            <span class="psw">Glömt <a href="#">lösenord?</a></span>
+        </div>
+    </form>
+
+</body>
+</html>
