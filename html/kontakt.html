@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animesida</title>
+    <link rel="stylesheet" href="css/az.css"> <!-- Länka till den korrekta CSS-filen -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="login.html">Logga in</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#">Tjänster</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Kontaktsektion -->
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Leave us a message:</p>
+        </div>
+        <div class="row">
+            <!-- Map image column -->
+            <div class="column">
+                <img src="bilder/Anime-Logo-PNG-HD-Image.png" style="width: 100%; height: auto;">
+            </div>
+            <!-- Form column -->
+            <div class="column">
+                <form action="/action_page.php" method="post">
+                    <label for="fname">Förnamn</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ditt namn.." required>
+                    
+                    <label for="lname">Efternamn</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn.." required>
+                    
+                    <label for="country">Land</label>
+                    <select id="country" name="country" required>
+                        <option value="australia">Australien</option>
+                        <option value="canada">Kanada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    
+                    <label for="subject">Ämne</label>
+                    <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:170px" required></textarea>
+                    
+                    <input type="submit" value="Skicka">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

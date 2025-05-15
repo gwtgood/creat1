@@ -1,3 +1,12 @@
+/* login.css */
+/* Bakgrundsbild för hela sidan */
+body {
+  background-image: url("../../bilder/background.jpg");  
+  background-size: cover; /* Täcker hela sidan */
+  background-position: center; /* Centrerar bilden */
+  background-attachment: fixed; /* Bakgrunden ska vara fixerat vid scrollning */
+  background-repeat: no-repeat; /* Hindrar upprepning av bilden */
+}
 
 /* Formulär */
 form {
@@ -5,10 +14,12 @@ form {
   max-width: 400px; /* Maxbredd */
   margin: 40px auto; /* Centrering med marginal */
   padding: 20px; /* Inre utrymme */
-  background-image: url('bilder/OIP.jpg'); /* Bakgrundsbild */
+  background-image: url("../../bilder/background.png"); /* Bakgrundsbild */
   border-radius: 10px; /* Rundade hörn */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Lätt skugga */
+  
 }
+
 
 /* Inputfält */
 input[type=text], input[type=password] {
@@ -46,7 +57,7 @@ button:hover {
 .imgcontainer {
   text-align: center; /* Centrerar innehåll */
   margin: 24px 0 12px 0; /* Marginaler */
-  background-image: url('bilder/Anime-Logo-PNG-HD-Image.png'); /* Bakgrundsbild */
+  background-image: url("../../bilder/Anime-Logo-PNG-HD-Image.png"); /* Bakgrundsbild */
   background-size: contain; /* Anpassa bildstorlek */
   height: 150px; /* Höjd på behållaren */
 }
@@ -62,16 +73,7 @@ span.psw {
   padding-top: 16px; /* Padding */
 }
 
-/* Responsiv design för små skärmar */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block; /* Blocklayout på mobil */
-    float: none; /* Ingen float */
-  }
-  .cancelbtn {
-    width: 100%; /* Full bredd */
-  }
-}
+
 
 /* Länk-knapp */
 .login-link-button {
@@ -91,4 +93,15 @@ span.psw {
 
 .login-link-button:hover {
   opacity: 0.9; /* Lätt genomskinlighet vid hover */
+}
+
+/* Responsiv design för små skärmar */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block; /* Blocklayout på mobil */
+    float: none; /* Ingen float */
+  }
+  .cancelbtn {
+    width: 100%; /* Full bredd */
+  }
 }

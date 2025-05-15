@@ -1,0 +1,296 @@
+/* Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Slide styles */
+header {
+    background-image: url('bilder/OIP.jpg'); /* byt till din bild */
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.card {
+    width: 80px;
+    height: 300px;
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s ease;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.8);
+    flex-shrink: 0;
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > .row > .description {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 300px;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: 0.4s ease;
+}
+
+.card > .row > .description h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+.card > .row > .description p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 500px;
+}
+
+input:checked + label .description {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Specific background images */
+.card[for="c1"] {
+    background-image: url('bilder/assasin_classrom.jpg');
+}
+.card[for="c2"] {
+    background-image: url('bilder/gitama.jpg');
+}
+.card[for="c3"] {
+    background-image: url('bilder/R.jpg');
+}
+.card[for="c4"] {
+    background-image: url('bilder/slime.jpg');
+}
+
+/* Login Styles */
+body {
+    background-image: url("bilder\background.png"); 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+form {
+    border: 3px solid #121212;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: url("bilder\OIP.jpg");
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    padding: 10px 18px;
+    width: auto;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    background-image: url("../../bilder/Anime-Logo-PNG-HD-Image.png");
+    background-size: contain;
+    height: 150px;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.login-link-button {
+    display: block;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.login-link-button:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* Kontakt Styles */
+body {
+    background-image: url('Projekt_CSS\bilder\background.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 1 1 100%;
+        margin-top: 0;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+    }
+}

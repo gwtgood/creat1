@@ -1,0 +1,78 @@
+/* kontakt.css */
+/* Reset box-sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Background image for body */
+  body {
+    background-image: url('C:\Users\quoc.nguyen2\Documents\Webutveckling\Projekt_CSS\bilder\background.png'); /* Ange vägen till din bild */
+    background-size: cover; /* Gör så att bilden täcker hela bakgrunden */
+    background-position: center center; /* Centrerar bakgrundsbilden */
+    background-attachment: fixed; /* Gör så att bilden inte rör sig när du scrollar */
+    background-repeat: no-repeat; /* Gör så att bilden inte upprepas */
+    margin: 0; /* Ta bort standardmarginaler */
+    font-family: Arial, sans-serif; /* Exempel på att sätta en font */
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 4px; /* Added border-radius for better appearance */
+  }
+  
+  /* Submit button styling */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Round edges for submit button */
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; /* Increased padding for a cleaner layout */
+    margin-top: 20px; /* Added some space from the top */
+    background-color: rgba(242, 242, 242, 0.8); /* Transparent background to see the background image */
+  }
+  
+  /* Flexbox layout for the row */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Column styling */
+  .column {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    min-width: 300px; /* Ensures a minimum width for better layout on small screens */
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, stack the columns vertically */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 1 1 100%; /* Forces the columns to take up full width */
+      margin-top: 0;
+    }
+    
+    input[type=submit] {
+      width: 100%; /* Full width for submit button on smaller screens */
+    }
+  }
+  
